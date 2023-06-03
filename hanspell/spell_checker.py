@@ -45,8 +45,10 @@ def check(text):
         return Checked(result=False)
 
     payload = {
-        '_callback': 'window.__jindo2_callback._spellingCheck_0',
-        'q': text
+        '_callback': 'jQuery11240003383472025177525_1680133565087',
+        'q': text,
+        'where': 'nexearch',
+        'color_blindness': 0
     }
 
     headers = {
@@ -58,7 +60,7 @@ def check(text):
     r = _agent.get(base_url, params=payload, headers=headers)
     passed_time = time.time() - start_time
 
-    r = r.text[42:-2]
+    r = r.text[44:-2]
 
     data = json.loads(r)
     html = data['message']['result']['html']
