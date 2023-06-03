@@ -1,4 +1,4 @@
-base_url = 'https://m.search.naver.com/p/csearch/ocontent/spellchecker.nhn'
+base_url = 'https://m.search.naver.com/p/csearch/ocontent/oconten/util/SpellerProxy'
 
 
 class CheckResult:
